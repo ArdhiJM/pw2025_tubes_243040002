@@ -5,7 +5,7 @@
     }
     require "koneksi.php";
 
-    $queryProduk = mysqli_query($con, "SELECT a.*, b.nama AS nama_kategori FROM produk a JOIN kategori b ON a.kategori_id = b.id ORDER BY b.nama ASC, a.id DESC LIMIT 5");
+    $queryProduk = mysqli_query($con, "SELECT a.*, b.nama AS nama_kategori FROM produk a JOIN kategori b ON a.kategori_id = b.id ORDER BY b.nama ASC, a.id DESC LIMIT 6");
     $dataProduk = [];
     while($produk = mysqli_fetch_array($queryProduk)) {
         $dataProduk[] = $produk;

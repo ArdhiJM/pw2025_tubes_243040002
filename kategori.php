@@ -116,7 +116,7 @@
         <form action="" method="get" class="mb-4">
             <div class="row g-3">
                 <div class="col-md-6">
-                    <input type="text" name="keyword" class="form-control" placeholder="Cari destinasi..." value="<?php echo htmlspecialchars($nama_produk_cari); ?>">
+                    <input type="text" name="keyword" class="form-control" placeholder="Cari Kategori..." value="<?php echo htmlspecialchars($nama_produk_cari); ?>">
                 </div>
                 <div class="col-md-4">
                     <select name="kategori" class="form-select">
@@ -151,7 +151,7 @@
                                 <p class="package-price">Harga: Rp<?php echo number_format($produk['harga']); ?></p>
 
                                 <div class="package-features">
-                                    <h6>Fitur Termasuk:</h6>
+                                    <h6>Dekripsi:</h6>
                                     <ul>
                                         <?php
                                             // Memecah detail menjadi baris dan menampilkan hingga 3-4 fitur pertama
@@ -169,9 +169,9 @@
                                                 echo '<li><i class="fas fa-check"></i> ' . htmlspecialchars(substr(strip_tags($produk['detail']), 0, 80)) . (strlen(strip_tags($produk['detail'])) > 80 ? '...' : '') . '</li>';
                                             }
                                         ?>
-                                        <li><i class="fas fa-check"></i> Pengalaman tak terlupakan</li>
+                                        <!-- <li><i class="fas fa-check"></i> Pengalaman tak terlupakan</li>
                                         <li><i class="fas fa-check"></i> Pemandu Profesional</li>
-                                        <li><i class="fas fa-check"></i> Asuransi Perjalanan</li>
+                                        <li><i class="fas fa-check"></i> Asuransi Perjalanan</li> -->
                                     </ul>
                                 </div>
                                 <a href="kategori-detail.php?p=<?php echo htmlspecialchars($produk['id']); ?>" class="btn btn-primary mt-auto">Lihat Detail Paket</a>
