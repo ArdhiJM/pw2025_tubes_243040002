@@ -1,0 +1,345 @@
+/* Custom Styles for Tourism Theme */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa; /* Light grey background */
+  /* padding-top: 70px; Adjust for fixed navbar */
+}
+
+/* Navbar Customization (Frontend) */
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Hero Section (Frontend) */
+.hero-section {
+  position: relative;
+  height: 60vh; /* Adjust height as needed */
+  background: url("../image/bg3.png") no-repeat center center/cover; /* Path relatif dari CSS ke folder image */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden; /* Hide overflow from any child elements */
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Overlay untuk teks lebih jelas */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* About Section (Frontend) */
+.about-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.about-section img {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-heading {
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 40px;
+}
+
+/* Featured Destinations (Frontend) */
+.featured-destinations {
+  padding: 60px 0;
+  background-color: #f0f2f5;
+}
+
+.destination-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+}
+
+.destination-card .card-img-top {
+  height: 200px; /* Pertahankan tinggi ini agar layout kartu tetap konsisten */
+  object-fit: contain; /* Ubah ke 'contain' agar seluruh gambar terlihat */
+  width: 100%;
+  background-color: #f0f0f0; /* Opsional: Tambahkan warna latar belakang untuk area kosong jika rasio gambar tidak pas */
+}
+
+.destination-card .card-body {
+  padding: 20px;
+}
+
+.destination-card .card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+.destination-card .card-text {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+.destination-card .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.destination-card .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Detail Page Styling (Frontend) */
+.destination-detail-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination-detail-info h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 15px;
+}
+
+.destination-detail-info h5 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.destination-detail-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #495057;
+}
+
+/* Contact Page Styling (Frontend) */
+.contact-section {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.contact-info ul li i {
+  color: #007bff;
+  width: 25px;
+}
+
+/* Admin Panel Specific Styles */
+/* Styling dasar untuk elemen kotak (ini mungkin sisa, bisa diabaikan atau disesuaikan) */
+
+/* Styling untuk bagian ringkasan kategori dan produk */
+.summary-kategori,
+.summary-produk {
+  background-color: #007bff; /* Warna biru Bootstrap */
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-kategori .fa-boxes,
+.summary-produk .fa-box {
+  opacity: 0.5; /* Membuat ikon lebih transparan */
+}
+
+/* Styling untuk navbar admin dan frontend */
+#customNavbar, /* Ini untuk navbar admin */
+#customNavbarFrontend /* Ini untuk navbar frontend yang baru */ {
+  background: linear-gradient(
+    to right,
+    #e0ffe0,
+    #a1d6af
+  ); /* Dari hijau sangat muda ke hijau lebih pekat */
+  color: #333; /* Warna teks standar untuk keseluruhan navbar */
+}
+
+#customNavbar .navbar-brand,
+#customNavbar .nav-link,
+#customNavbarFrontend .navbar-brand,
+#customNavbarFrontend .nav-link {
+  color: #333 !important; /* Memastikan warna teks link kontras (untuk keduanya) */
+}
+
+/* Opsional: Ubah warna teks saat di-hover */
+#customNavbar .nav-link:hover,
+#customNavbarFrontend .nav-link:hover {
+  color: #007bff !important; /* Contoh warna biru saat di-hover (untuk keduanya) */
+}
+
+/* Styling untuk icon toggler jika diperlukan */
+#customNavbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Breadcrumb Styling */
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #007bff;
+}
+.breadcrumb-item.active {
+  color: #6c757d;
+}
+
+/* General Table Styling */
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+/* Styling untuk Bagian Tentang Muara Rahong */
+.about-section {
+  background-color: #f8f9fa; /* Warna latar belakang terang untuk bagian ini */
+  padding: 60px 0; /* Padding vertikal */
+}
+
+.about-section .section-heading {
+  color: #343a40; /* Warna gelap untuk judul */
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.about-section .btn-primary {
+  background-color: #007bff; /* Bootstrap primary blue */
+  border-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+.about-section .btn-primary:hover {
+  background-color: #0056b3; /* Biru lebih gelap saat hover */
+  border-color: #0056b3;
+}
+
+/* Penyesuaian Hero Section agar lebih mirip dengan referensi */
+.hero-section {
+  position: relative;
+  height: 70vh; /* Sesuaikan tinggi hero section */
+  background: url("../image/bg3.png") no-repeat center center/cover; /* Path relatif dari CSS ke folder image */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Overlay gelap */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem; /* Ukuran font judul */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+  font-size: 1.5rem; /* Ukuran font paragraf */
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Mengatur navbar agar selalu berada di atas semua konten */
+.fixed-top {
+  z-index: 1050; /* Pastikan ini lebih tinggi dari elemen lain yang mungkin punya z-index */
+}
+
+/* Styling untuk Navbar Frontend agar sama dengan Navbar Admin */
+#frontendNavbar {
+  background: linear-gradient(
+    to right,
+    #e0ffe0,
+    #a1d6af
+  ); /* Gradient yang sama dengan admin panel */
+}
+
+#frontendNavbar .navbar-brand,
+#frontendNavbar .nav-link,
+#frontendNavbar .nav-link.active {
+  color: #333 !important; /* Memastikan warna teks link kontras dengan background */
+}
+
+#frontendNavbar .nav-link:hover {
+  color: #007bff !important; /* Contoh warna biru saat di-hover, bisa disesuaikan */
+}
+
+/* Untuk tombol toggler (hamburger menu) agar terlihat jelas */
+#frontendNavbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2851, 51, 51, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+#frontendNavbar .btn-outline-light {
+  color: #333 !important;
+  border-color: #333 !important;
+}
+
+#frontendNavbar .btn-outline-light:hover {
+  background-color: #333 !important;
+  color: #fff !important;
+}
