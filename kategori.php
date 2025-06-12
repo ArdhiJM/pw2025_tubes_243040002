@@ -111,7 +111,7 @@
     <?php require "includes/frontend-navbar.php"; ?>
 
     <div class="container my-5 pt-5">
-        <h2 class="text-center section-heading mb-4">Jelajahi Semua Destinasi Kami</h2>
+        <h2 class="text-center section-heading mb-4">Jelajahi Semua Kategori Kami</h2>
 
         <form action="" method="get" class="mb-4">
             <div class="row g-3">

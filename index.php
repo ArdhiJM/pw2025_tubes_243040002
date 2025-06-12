@@ -38,7 +38,7 @@
             <h2 class="section-heading">Tentang Muara Rahong</h2>
             <div class="row align-items-center">
                 <div class="col-md-6 mb-4 mb-md-0">
-                    <img src="" alt="Muara Rahong View" class="img-fluid rounded-3 shadow">
+                    <img src="image/bg2.jpg" alt="Muara Rahong View" class="img-fluid rounded-3 shadow">
                 </div>
                 <div class="col-md-6">
                     <p class="lead">Muara Rahong Hills adalah destinasi glamping menakjubkan yang terletak di tepi sungai yang jernih, dikelilingi oleh hutan pinus yang tenang di Pangalengan, Kabupaten Bandung.</p>
