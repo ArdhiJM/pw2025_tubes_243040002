@@ -5,9 +5,6 @@ require "koneksi.php"; // Koneksi ke database
 
 $login_error = '';
 
-// Tidak perlu pengalihan awal di sini, karena kita ingin memproses login untuk kedua role.
-// Jika admin sudah login di panel admin, mereka mungkin masih bisa mengakses halaman ini,
-// tapi logika di bawah akan menanganinya jika mereka mencoba login lagi.
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username_or_email = htmlspecialchars($_POST['username_or_email']);
@@ -16,7 +13,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($username_or_email) || empty($password)) {
         $login_error = "Username/Email dan Password harus diisi!";
     } else {
-        // Hapus filter `AND role = 'user'` dari query
         // Query ini akan mencari akun user atau admin berdasarkan username/email
         $query = mysqli_query($con, "SELECT * FROM user WHERE username = '$username_or_email' OR email = '$username_or_email'");
         $count = mysqli_num_rows($query);
