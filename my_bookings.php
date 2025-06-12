@@ -61,7 +61,7 @@ while ($booking = mysqli_fetch_array($queryBookings)) {
 
     <div class="container my-5 pt-5">
         <h2 class="text-center mb-4 section-heading">Daftar Pesanan Saya</h2>
-        <p class="text-center text-muted mb-5">Berikut adalah daftar pemesanan destinasi Anda.</p>
+        <p class="text-center text-muted mb-5">Berikut adalah daftar pemesanan Anda.</p>
 
         <?php if (isset($_SESSION['booking_status'])): ?>
             <div class="alert alert-<?php echo $_SESSION['booking_status']['type']; ?> text-center" role="alert">
