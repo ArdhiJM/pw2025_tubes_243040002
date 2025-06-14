@@ -6,7 +6,7 @@ if (session_status() == PHP_SESSION_NONE) {
 ?>
 <nav class="navbar navbar-expand-lg" id="customNavbar">
     <div class="container">
-        <a class="navbar-brand" href="index.php">Muara Rahong Admin</a>
+        <a class="navbar-brand" href="index.php">Admin</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,14 @@ if (session_status() == PHP_SESSION_NONE) {
                     <a class="nav-link" href="produk.php">Produk</a>
                 </li>
                 <li class="nav-item me-4">
-                    <a class="nav-link" href="pemesanan.php">Pemesanan</a> </li>
+                    <a class="nav-link" href="pemesanan.php">Pemesanan</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="pesan_kontak.php">Pesan kontak</a> 
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="blog-posts.php">Blog Posts</a> 
+                </li>
 
                 <?php if (isset($_SESSION['username']) && isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
                     <li class="nav-item dropdown">

@@ -75,9 +75,9 @@ while ($post = mysqli_fetch_array($queryBlogPosts)) {
                     <div class="col">
                         <div class="card blog-card">
                             <?php if (!empty($post['image'])): ?>
-                                <img src="image/blog_images/<?php echo htmlspecialchars($post['image']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($post['title']); ?>">
+                                <img src="image/<?php echo htmlspecialchars($post['image']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($post['title']); ?>">
                             <?php else: ?>
-                                <img src="image/placeholder.png" class="card-img-top" alt="Placeholder Image">
+                                <img src="image/blog1.jpg" class="card-img-top" alt="Placeholder Image">
                             <?php endif; ?>
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo htmlspecialchars($post['title']); ?></h5>
