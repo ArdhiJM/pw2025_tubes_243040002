@@ -21,8 +21,6 @@ if (session_status() == PHP_SESSION_NONE) {
                 <li class="nav-item">
                     <a class="nav-link" href="../kategori.php">Harga</a> </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="gallery.php">Galeri Foto</a> </li>
-                <li class="nav-item">
                     <a class="nav-link" href="blog.php">Blog</a> </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.php">Kontak</a>
