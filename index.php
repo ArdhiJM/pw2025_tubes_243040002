@@ -25,7 +25,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muara Rahong Hils - Muara Rahong Hills - Wisata Glamping Camping Outbound Rafting Flying Fox Paintball, Off Road Pangalengan Bandung Selatan</title>
+    <title>Muara Rahong Hills - Muara Rahong Hills - Wisata Glamping Camping Outbound Rafting Flying Fox Paintball, Off Road Pangalengan Bandung Selatan</title>
     <link rel="stylesheet" href="bootstrap/bootstrap-5.3.6-dist/bootstrap-5.3.6-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
